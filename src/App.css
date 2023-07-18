@@ -1,0 +1,288 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.watchList_header {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.watclistNames_container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  white-space: nowrap;
+  height: 30px;
+  padding: 5px;
+  overflow: scroll;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.watclistNames_container li {
+  margin: 0px 5px;
+}
+
+.watclistNames_container li:hover {
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+
+.search-area {
+  display: flex;
+  position: relative;
+  width: 90%;
+  /* margin-left: 15px; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* margin-left: 15px; */
+}
+
+.search-input {
+  width: 80%;
+  /* margin: 10px auto; */
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  /* text-align: right; */
+  padding-left: 12%;
+}
+
+.search-input ::placeholder {
+  text-align: center;
+}
+
+.search_icon {
+  width: 40px;
+  position: absolute;
+  padding: -1%;
+  padding: 2%;
+}
+
+.filter_icon {
+  height: 40px;
+  position: absolute;
+  padding-left: 80%;
+  padding-top: 1%;
+}
+
+.watchListComponent {
+  /* width: 30%; */
+  /* margin-left: 15px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  display: flex;
+  flex-direction: column;
+}
+
+.watchlist-item {
+  /* height: 70px; */
+  /* background-color: darkgrey; */
+  color: black;
+  /* margin: 5px 0px; */
+  font-size: 16px;
+  border-bottom: 1px solid black;
+  /* margin: 5px 0px; */
+  /* padding-left: 10px; */
+  /* padding-right: 5px; */
+  /* border-radius: 10px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.watchlist-row {
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* padding: 5px; */
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
+}
+
+.watchlist_data_left {
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  white-space: nowrap;
+}
+
+.watchlist_data_right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.action_name {
+  margin-left: 2%;
+  display: flex;
+  justify-content: flex-end;
+  /* justify-content: center;
+  align-items: end; */
+  font-weight: bold;
+}
+
+/* search screen */
+.headersearch {
+  border-radius: 10px;
+  /* border-radius: 33%; */
+  margin-top: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid grey;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.back_arrow {
+  width: 10%;
+  margin: auto;
+}
+
+.list_item {}
+
+.back_arrow img {
+  width: 90%;
+  object-fit: contain;
+
+  /* height: 100%; */
+}
+
+.no_SearchData {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_label_stock {
+  font-weight: bold;
+}
+
+.search_area {
+  width: 90%;
+}
+
+.modal-header p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.modal-dialog {
+  width: 95%;
+  position: fixed;
+  /* top: auto;
+  right: auto;
+  left: auto; */
+  bottom: 0;
+}
+
+.modal-content {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+}
+
+.create_watchList {
+  width: 100%;
+  padding: 3%;
+  /* margin-left: 2%; */
+  /* height: 29%; */
+  border: 1px solid grey;
+}
+
+.w_icons {
+  /* height: 20%; */
+  /* width: 20%; */
+}
+
+.w_icons img {
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.custom-title-class {
+  /* color: red;  */
+  font-size: 20px;
+}
+
+.header_err {
+  text-align: center;
+  font-weight: 500;
+}
+
+.stock_err {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.watchlist_banner {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.right_header {}
+
+.left_img img {
+  width: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
